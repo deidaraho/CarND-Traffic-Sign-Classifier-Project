@@ -32,7 +32,7 @@ Pre-view shows some samples from the data set.
 ![pre-view](./images/preview.png)
 
 Label-distribution is a bar chart discribes the distribution of the frequencies to different signs.
-[label-distibution]: ./images/label-dist.png "Label-distribution"
+![label-distibution](./images/label-dist.png)
 
 
 ### Design and Test a Model Architecture
@@ -43,7 +43,7 @@ As a first step, I decided to convert the images to grayscale because the LeNet 
 
 Here is an example of a traffic sign image before and after grayscaling, it is not from the data set but from the third section from online searching.
 
-[Color2Gray]: ./images/color2gray.png "Color2Gray"
+![Color2Gray](./images/color2gray.png)
 
 As a last step, I normalized the image data because to get rid of bias for traning and testing.
 
@@ -71,8 +71,7 @@ My final model consisted of the following layers:
 | Softmax				| etc.        									|
 
 The flowchart from online is as follows,
-[Modified_LeNet]: ./images/modifiedLeNet.jpeg "Modified_LeNet"
-
+![Modified_LeNet](./images/modifiedLeNet.jpeg)
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
@@ -104,7 +103,7 @@ Moreover, the accuracies in validation and test data set confirm my try in this 
 
 Here are five German traffic signs that I found on the web:
 
-[Color2Gray]: ./images/color2gray.png "Color2Gray"
+![Color2Gray](./images/color2gray.png)
 
 The last two images might be difficult to classify because they are similar format with different speed limits.
 
@@ -112,14 +111,13 @@ The last two images might be difficult to classify because they are similar form
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Keep right      		| Keep right  									| 
+| Image			        |     Prediction	        					        | 
+|:---------------------:|:-----------------------------------------------------:| 
+| Keep right      		| Keep right  									        | 
 | Right-of-way at the next intersection |  Right-of-way at the next intersection|
-| Priority road			| Priority road									|
-| 60 km/h	      		| 30 km/h    					 				|
-| 30 km/h			    | 30 km/h           							|
-
+| Priority road			| Priority road									        |
+| 60 km/h	      		| 30 km/h    					 				        |
+| 30 km/h			    | 30 km/h           							        |
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. 
 The accuracy diffference to the test data set may because,
@@ -137,16 +135,19 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 | 1.0         			| Keep right                            		| 
 
 For the second image,
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0         			| Right-of-way at the next intersection   		| 
 
 For the third image,
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.0         			|Priority road                           		|
 
 For the 4th image,
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 8.9219403e-01			|30km/h                                 		|
@@ -156,6 +157,7 @@ For the 4th image,
 | 4.0532828e-05			|Keep right                              		|
 
 For the 5th image,
+
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 9.9999988e-01			|30km/h                                 		|
@@ -165,4 +167,3 @@ For the 5th image,
 | 1.8471558e-23			|Wild animals crossing                    		|
 
 The last two signs' top 5 classification probabilites show the model is week to clasify exact digit on speed limit signs. A future improvement is to apply an iterative classifier which focuses on only speed limit signs. Once the current model determines a speed limit sign, the photo is sent the this new classifier to determine its speed.
-
