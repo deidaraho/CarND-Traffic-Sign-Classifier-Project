@@ -32,6 +32,7 @@ Pre-view shows some samples from the data set.
 ![pre-view](./images/preview.png)
 
 Label-distribution is a bar chart discribes the distribution of the frequencies to different signs.
+
 ![label-distibution](./images/label-dist.png)
 
 
