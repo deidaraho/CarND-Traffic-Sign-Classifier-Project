@@ -33,7 +33,7 @@ Pre-view shows some samples from the data set.
 
 Label-distribution is a bar chart discribes the distribution of the frequencies to different signs.
 
-![label-distibution](./images/label-dist.png)
+![label-distibution](./images/label_dist.png)
 
 
 ### Design and Test a Model Architecture
